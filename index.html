@@ -54,7 +54,7 @@
             gap: 1rem;
         }
 
-        .request-details {
+        .details {
             width: 100%;
             display: flex;
             flex-direction: row;
@@ -63,7 +63,7 @@
             gap: 1rem;
         }
 
-        .request-details input, .request-details select, .request-details button{
+        .details input, .details select, .details button{
             margin: 0;
             padding: 1rem;
             border: 0.25rem solid #f1f1f1;
@@ -72,11 +72,11 @@
             font-family: monospace;
         }
 
-        .request-details input {
+        .details input {
             width: 100%;
         }
 
-        .request-details button {
+        .details button {
             cursor: pointer;
             text-align: center;
             width: 20%;
@@ -159,6 +159,10 @@
 <script>
     const BODY_CONFIG = {
         "TAB": "    "
+    }
+
+    function clearResponse() {
+        document.getElementById('response').innerText = "";
     }
 
     function sendRequest(method) {
@@ -247,7 +251,7 @@
         <div class="devtools">
             <h1>Request</h1>
 
-            <div class="request-details">
+            <div class="details request-details">
                 <input type="text" id="url" placeholder="url" value="/api">
 
                 <button id="method" onclick="sendRequest('GET');">GET</button>
@@ -262,6 +266,10 @@
 
             <h1>Response</h1>
 
+            <div class="details response-details">
+                <button onclick="clearResponse();">Clear</button>
+            </div>
+            
             <div class="response">
                 <pre id="response"></pre>
             </div>

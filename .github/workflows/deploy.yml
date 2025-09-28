@@ -55,4 +55,4 @@ jobs:
           git commit -m "Latest build $(date "+%Y-%m-%d %H:%M:%S")"
           git push -f origin latest-release
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.POSTWOMAN_TOKEN }}

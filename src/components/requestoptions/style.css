@@ -1,0 +1,10 @@
+.request-options {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: var(--size-3);
+  overflow: hidden;
+  height: 100%;
+}
+

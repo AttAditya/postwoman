@@ -1,0 +1,54 @@
+.url-bar {
+  align-self: stretch;
+  display: flex;
+  align-items: center;
+  gap: var(--size-3);
+}
+
+.url-input {
+  flex: 1;
+  display: flex;
+  gap: var(--size-3);
+}
+
+.url-bar-input {
+  background: var(--color-d);
+  color: var(--color-c);
+  font-size: var(--size-5);
+  border-radius: var(--size-3);
+  padding: var(--size-3) var(--size-4);
+  cursor: text;
+}
+
+.url-bar-input:nth-child(1) {
+  flex: 1;
+}
+
+.url-bar-input:nth-child(2) {
+  flex: 2;
+}
+
+.methods {
+  display: flex;
+  gap: var(--size-3);
+  align-items: center;
+}
+
+.method-button {
+  background: var(--color-b);
+  color: var(--color-d);
+  font-size: var(--size-5);
+  border-radius: var(--size-3);
+  padding: var(--size-3) var(--size-6);
+  cursor: pointer;
+}
+
+.method-button:hover {
+  box-shadow: var(--shadow-cs);
+}
+
+.method-button:active {
+  box-shadow: var(--shadow-cl);
+  scale: 0.8;
+}
+

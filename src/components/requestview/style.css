@@ -1,0 +1,7 @@
+.request-view {
+  display: flex;
+  gap: var(--size-3);
+  flex: 1;
+  height: 100%;
+  overflow: hidden;
+}

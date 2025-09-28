@@ -38,6 +38,7 @@ function context() {
       const url = `${baseUrl}${endpoint}`;
       const options = {
         method,
+        credentials: 'include',
         headers: {},
         body: bodyRef.current.value || null,
       };
